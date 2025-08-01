@@ -1,0 +1,21 @@
+1. Input a number and check if it a Krishnamurthy number.
+
+2. Find the sum of first n prime numbers using as user defined function to check for prime. Input the value of n from the user.
+
+3. Input a limit n and print all prime fibonacci numbers up to n using a user defined function prime() which returns a 1 if the argument is a prime or else 0.
+
+4. Input a limit n and print all twin prime numbers up to n.
+
+5. Input the values of two variables n and r and calculate nCr.
+
+6. Generate a pascal’s triangle upto n rows (value of n is to be taken as input from the user).
+
+7. Input a number n and print its prime factors using a user defined function int prime(int) which returns a 1 if the argument
+is a prime or else 0.
+
+8. Calculate the below series. Use a user defined function fact(n) which will return the factorial of n.
+   x/1! – x^3/3! + x^5/5! – x^7/7! + ........(up to n terms).
+
+9. Print the sum of natural numbers up to n using recursion.
+
+10. Find the nth Fibonacci number using recursion. The value of n should be taken as input.
