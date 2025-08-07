@@ -4,7 +4,7 @@
 ph_num=input("Enter a phone number: ")
 
 dictionary = {
-    "1" : "one",
+    "1" : "",
     "2" : "two",
     "3" : "three",
     "4" : "four",
@@ -15,6 +15,8 @@ dictionary = {
     "9" : "ninr",
     "0" : "zero",
 }
+
+print(dictionary)
     
 print("The phone number in words is: ",{ph_num})
 
