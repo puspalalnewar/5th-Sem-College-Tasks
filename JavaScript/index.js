@@ -47,14 +47,11 @@
 // let arr = [1,50,[2, [3, [4]]]];
 // console.log(arr.flat(3)); // [1,2,3,4]
 
-
-
 // let str = "HeLLo WoRLd";
-// let swapped = str.split("").map(ch => 
+// let swapped = str.split("").map(ch =>
 //   ch === ch.toUpperCase() ? ch.toLowerCase() : ch.toUpperCase()
 // ).join("");
 // console.log(swapped); // hEllO wOrlD
-
 
 // const fetchData = async (url) => {
 //   try {
@@ -66,12 +63,15 @@
 //   }
 // };
 
-// const arr = [1, 2, 3, 4, 5];
+const arr = [1, 2, 3, 4, 5];
+
+const chainedArr = arr.map((e)=>e).filter((e)=>e>2).reduce((acc , curr)=> acc * curr, 1)
+console.log(chainedArr)
 
 // arr.forEach(element => {
 //     console.log(element)
 // });
 
-// arr.filter((ele)=> {
-//     console.log(ele)
-// })
+// console.log(arr.filter((ele) => ele > 2));
+
+

@@ -1,8 +1,8 @@
-def merger_sort(arr, lb, ub) : 
+def merge_sort(arr, lb, ub) : 
     if lb < ub : 
         mid = (lb + ub) // 2
-        merger_sort(arr, lb, mid)
-        merger_sort(arr, mid+1, ub)
+        merge_sort(arr, lb, mid)
+        merge_sort(arr, mid+1, ub)
         simple_merge(arr, lb, mid, ub)
         
 def simple_merge(arr, lb, mid, ub) : 
@@ -32,5 +32,5 @@ arr = []
 arr= input("Enter arr element separated by space : ").split(" ")
 for i in range (len(arr)) :
     arr[i] = int(arr[i])
-merger_sort(arr, 0, len(arr)-1)
+merge_sort(arr, 0, len(arr)-1)
 print(arr)
