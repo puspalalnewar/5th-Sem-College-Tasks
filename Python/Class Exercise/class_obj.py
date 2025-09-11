@@ -1,11 +1,15 @@
-class Test:
-    def __init__(self, name):
-        self.name = name
-        print(f'{self.name} is created')
-    def __del__(self) :
-        print(f'{self.name} is created')
-    def display(self) :
-        print(f'I am {self.name}')
+class Grandfather : 
+    def skill(slef) :
+        print("I like to play Football!!")
+class Father:
+    def skill(self) :
+        print("I can drive")
+class Mother:
+    def hobby(self) :
+        print("I am a mom")
+class Child(Father, Mother, Grandfather) :
+    def talent(self) :
+        print("We are Gen Z")
         
-obj1 = Test("Object 1")
-obj1.display()
+Obj1 = Child()
+Obj1.skill()
