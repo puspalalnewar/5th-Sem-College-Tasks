@@ -1,37 +1,51 @@
-# Merge Sort
-def merge_sort(arr, lb, ub) :
-    if lb < ub :
-        mid = (lb + ub) // 2
-        merge_sort(arr, lb, mid)
-        merge_sort(arr, mid+1, ub)
-        simple_merge(arr, lb, mid, ub)
+import math
+# ! Q7. Compute the telephone bill for Mr. X as per the call rates given below:
+    
+#     Base tariff = 250
+#     1st 100 calls   @Rs.  0.2
+#     Next 100 calls  @ Rs. 0.3
+#     Remaining calls @ Rs. 0.5
 
-# Simple merge
-def simple_merge(arr, lb , mid, ub) :
-    aux = [0] * len(arr)
-    i, j, k = lb, mid+1, lb
-    while i <= mid and j <= ub :
-        if arr[i] < arr[j] :
-            aux[k] = arr[i]
-            i = i+1
-        else :
-            aux[k] = arr[j] 
-            j = j+1
-        k = k+1
-    while i <= mid :
-        aux[k] = arr[i]    
-        i = i+1
-        k = k+1
-    while j <= ub :
-        aux[k] = arr[j]
-        j = j+1
-        k = k+1
-    for idx in range(lb, ub+1) :
-        arr[idx] = aux[idx]    
+# ! Q8. Solve a given quadratic equation. (Without imaginary root).
 
-# Main
-arr = [50, 41 , 20, -1, 0, 7]
-# for i in range (len(arr)) :
-#     arr[i] = int(arr[i])
-merge_sort(arr, 0, len(arr)-1)
-print(arr)
+# ! Q9. Make Star Diamond
+
+#             *     
+#           * * *
+#         * * * * *
+#       * * * * * * *
+#         * * * * *
+#           * * *
+#             *
+
+# row = 5
+# for i in range (1, row+1) :
+#     print(" " * (row - i) + ("* ") * i)
+# # Lower part of the diamond
+# for i in range(row - 1, 0, -1):
+#     print(" " * (row - i) + "* " * i)
+
+# ! Q10. Make star hourglass
+
+#         * * * * * * *
+#           * * * * *
+#             * * *
+#               *
+#             * * *
+#           * * * * *
+#         * * * * * * *
+
+# row = 4
+# # For Upper Part
+# for i in range(row, 0, -1) :
+#     print(" " * (row-i) + "* " * i)
+# #For lower part
+# for i in range(2, row+1) :
+#     print(" " * (row-i) + "* " * i)
+
+# ! Q11. Input two numbers and find their hcf and lcm
+# num1 = int(input("Enter num1: "))
+# num2 = int(input("Enter num2 : "))
+# hcf = math.gcd(num1, num2)
+# lcm = (num1 * num2) // hcf
+# print(f"LCM : {lcm}\nHCF : {hcf}")
