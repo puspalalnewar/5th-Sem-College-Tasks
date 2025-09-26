@@ -12,6 +12,4 @@ while gap > 0 :
             j = j-gap
         list1[j] = j - gap
     gap = gap // 2
-print(list1)    
-
-        
+print(list1)
